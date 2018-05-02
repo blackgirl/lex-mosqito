@@ -476,6 +476,7 @@
     (function () {
         var options = {
             telegram: "username", // Telegram bot username
+            viber: "username", // Telegram bot username
             facebook: "username", // Facebook page ID
             whatsapp: "380631234567", // WhatsApp number
             company_logo_url: "//static.whatshelp.io/img/flag.png", // URL of company logo (png, jpg, gif)
@@ -483,7 +484,7 @@
             call_to_action: "Message us", // Call to action
             button_color: "#129BF4", // Color of button
             position: "right", // Position may be 'right' or 'left'
-            order: "facebook,whatsapp,telegram" // Order of buttons
+            order: "facebook,whatsapp,telegram,viber" // Order of buttons
         };
         var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
