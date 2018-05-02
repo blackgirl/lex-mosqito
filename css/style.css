@@ -1,115 +1,110 @@
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
+/*font-family: montserrat, arial, verdana;*/
+
 body {
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 1rem;
-    font-weight: 100;
-    line-height: 1.2;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.2;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
 }
 
 .to-left {
 	float: left;
 }
 .to-right {
-	float: right;
+  float: right;
+}
+.bg-grey {
+  background-color: #efefef !important;
 }
 
 /* TEXT */
-
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-bottom: .75rem;
-    font-family: inherit;
-    font-weight: 600;
-    line-height: 1.2;
-    color: inherit;
+  margin-bottom: .75rem;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+  color: inherit;
 }
 h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 h5 {
-    font-size: 1.25rem;
-    margin-left: 1.25rem;
+  font-size: 1.25rem;
+  margin-left: 1.25rem;
 }
-
+p {
+  margin-top: 0.5rem;
+}
 b {
-    font-weight: bold;
+  font-weight: bold;
 }
-
+.lead {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
 .text-12 {
-	font-size: 12px;
-}
-.fa-lg {
-    font-size: 2em;
+  font-size: 12px;
 }
 
-.mr-auto {
-	margin: 0 auto;
-}
-.to-right {
-	float: right;
-}
-
-.p-6rem-0 {
-    padding: 6rem 0;
-}
-.p-1rem {
-     padding: 1rem; 
-}
-.p-3rem {
-     padding: 3rem; 
-}
-.p-1rem-3rem {
-     padding: 1rem 3rem; 
-}
-.p-0-125 {
-	padding: 0 12.5%;
-}
-.pb-5rem {
-    padding-bottom: 5rem;
-}
-
-.fa-3x {
-    font-size: 3em;
-    padding: 30px;
-}
-
-/* BUTTONS*/
-
+/* BUTTONS & ICONS */
 .btn-outline-secondary {
-    color: #6c757d;
-    background-color: transparent;
-    background-image: none;
-    border-color: #6c757d;
+  color: #6c757d;
+  background-color: transparent;
+  background-image: none;
+  border-color: #6c757d;
+}
+.text-right .fa {
+  padding: 10px;
+}
+.fa-3x {
+  font-size: 3em;
+  padding: 30px;
 }
 
 /* HEADER*/
-
-.bg-light {
-	/*background-image: url(http://vst.net.ua/uploads/5a6708680f8f5.png);*/
+.navbar-nav {
+  margin: 0 auto;
 }
-#hello h3 {
-	margin-top: 4rem;
+.navbar-dark .navbar-brand {
+  color: #444;
 }
 .logo {
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    z-index: 99999;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  z-index: 99999;
+}
+
+#hello {
+  padding: 4rem;
+  padding-top: 0;
+}
+#hello h3 {
+  margin-top: 4rem;
+}
+#hello .hello-text {
+  padding: 4rem 0;
+}
+#hello .hello-3 {
+  padding: 0 12.5%;
+  padding-bottom: 5rem;
 }
 
 /* SECTION */
-
 section {
 	margin: 6rem;
 }
 .section-header {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 .section-header p {
-    font-weight: 500;
-    font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 .section-header h3 {
 	margin-bottom: 0; 
@@ -121,19 +116,19 @@ section {
 }
 
 #cash .fa + span {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 #cash .col-md-6 + .col-md-6 .fa:not(:first-child) + span {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 #cash .col-md-6 + .col-md-6 .fa + span {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 #cash .col-md-6 + .col-md-6 .fa {
-    padding: 0 30px;
+  padding: 0 30px;
 }
 #cash .col-md-6 + .col-md-6 h3 + div {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 #alert {
@@ -166,7 +161,6 @@ footer .row {
 }
 
 /* OWL CAROUSEL */
-
 .hide-bullets {
 	list-style:none;
 	margin-left: -40px;
@@ -175,16 +169,8 @@ footer .row {
 
 #sync1 .item {
   margin: 5px;
-  /*padding: 80px;*/
-  /*border-radius: 3px;*/
-  /*background: #0c83e7;*/
-  /*text-align: center;*/
 }
 #sync2 .item {
-  /*background: url(https://www.okonti.ru/r/43727beb16cbb35d130dc84e9a93f3c2.jpg);*/
-  /*background-size: cover;*/
-  /*padding: 30px 0px;*/
-  /*color: #FFF;*/
   margin: 5px;
   border-radius: 5px;
   text-align: center;
@@ -193,13 +179,10 @@ footer .row {
 #sync2 .item:hover {
   opacity: 0.8;
 }
-
 #sync2 .item h1 {
   font-size: 18px;
 }
-#sync2 .current .item {
-  /*background: #0c83e7;*/
-}
+#sync2 .current .item {}
 .owl-theme .owl-nav {}
 .owl-theme .owl-nav [class*='owl-'] {
   transition: all .3s ease;
@@ -227,7 +210,6 @@ footer .row {
 .owl-theme .owl-nav [class*=owl-] {
   background: none;
 }
-
 .item-text {
   width: 30%;
   float: left;

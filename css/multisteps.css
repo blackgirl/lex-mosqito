@@ -1,12 +1,6 @@
-/*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
-body {
-	/*font-family: montserrat, arial, verdana;*/
-}
-
-/*form styles*/
+/* FORM */
 #msform {
 	width: 80%;
-	/*margin: 50px auto;*/
 	text-align: center;
 	position: relative;
 }
@@ -17,40 +11,44 @@ body {
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	padding: 20px 30px;
 	box-sizing: border-box;
-	/*margin: 0 10%;*/
 	position: relative;
 }
 #msform fieldset:not(:first-of-type) {
 	display: none;
 }
-/*inputs*/
-#msform input, #msform textarea {
-	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	margin-bottom: 10px;
-	width: 100%;
-	box-sizing: border-box;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 13px;
+#msform input:not(.btn), #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
 }
-/*buttons*/
-#msform .action-button {
+#msform input[type=radio] {
 	width: auto;
-	background: #27AE60;
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 1px;
-	cursor: pointer;
-	padding: 10px 5px;
-	margin: 10px 5px;
 }
-#msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+
+/* BUTTONS */
+#msform .action-button.next {
+    background: #27AE60;
+    color: white;
 }
-/*headings*/
+#msform .action-button.previous {
+	background: #eee;
+    color: #444;
+}
+#msform .action-button.next:hover, #msform .action-button.next:focus {
+	/*box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;*/
+    background: #208a4d;
+}
+#msform .action-button.previous:hover, #msform .action-button.previous:focus {
+	background: #ccc;
+}
+
+/* TITLES */
 .fs-title {
 	font-size: 15px;
 	text-transform: uppercase;
@@ -63,16 +61,16 @@ body {
 	color: #666;
 	margin-bottom: 20px;
 }
-/*progressbar*/
+
+/* PROGRESS BAR */
 #progressbar {
 	margin-bottom: 30px;
 	overflow: hidden;
-	/*CSS counters to number the steps*/
+	/* CSS counters to number the steps */
 	counter-reset: step;
 }
 #progressbar li {
 	list-style-type: none;
-	/*color: white;*/
 	text-transform: uppercase;
 	font-size: 9px;
 	width: 25%;
@@ -92,7 +90,8 @@ body {
     margin: 0 auto 5px auto;
     border: 1px solid #333;
 }
-/*progressbar connectors*/
+
+/* PROGRESS BAR CONNECTORS */
 #progressbar li:after {
 	content: '';
     width: 100%;
@@ -110,7 +109,6 @@ body {
 	background: #27AE60;
 	color: white;
 }
-
 
 /* CHOOSER */
 div.clear {
