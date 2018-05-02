@@ -1,6 +1,8 @@
 /*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
 /*font-family: montserrat, arial, verdana;*/
 
+/* logo blue color #30c7f2 */
+
 body {
   margin: 0;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -205,6 +207,14 @@ footer .row {
   margin-top: -20px;
   position: absolute;
   top: 50%;
+  color: #444;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none;
+}
+#sync1.owl-theme .owl-prev:hover,
+#sync1.owl-theme .owl-next:hover {
+  color: #30c7f2;
 }
 #sync1.owl-theme .owl-prev {
   left: -30px;
