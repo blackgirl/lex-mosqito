@@ -150,6 +150,13 @@ section {
   border: 1px solid #ccc;
 }
 
+#contact {
+  margin: 0;
+}
+#contact .section-header {
+    margin-left: 6rem;
+}
+
 /* OWL CAROUSEL */
 
 .hide-bullets {
