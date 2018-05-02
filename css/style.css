@@ -75,24 +75,29 @@ b {
 }
 .logo {
   position: absolute;
-  top: 15px;
+  top: 20px;
   left: 50px;
   z-index: 99999;
 }
-
+.card-img-top {
+  width: 30%;
+}
 #hello {
   padding: 4rem;
   padding-top: 0;
 }
+#hello .text-right {
+  padding-top: 30px;
+}
 #hello h3 {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 #hello .hello-text {
-  padding: 4rem 0;
+  padding: 5.5rem 0;
 }
 #hello .hello-3 {
   padding: 0 12.5%;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 /* SECTION */
@@ -135,7 +140,7 @@ section {
 	padding: 50px;
 }
 
-#anketa .bg-light,
+#anketa .bg-grey,
 #form .bordered {
   padding: 15px 30px;
 }
