@@ -115,6 +115,11 @@ section {
 	margin-bottom: 0; 
 }
 
+#types .fa-square {
+  padding-right: 10px;
+  color: #ccc;
+}
+
 #cash .fa + span {
     padding: 30px 0;
 }
@@ -134,6 +139,17 @@ section {
 #alert {
 	padding: 50px;
 }
+
+#anketa .bg-light,
+#form .bordered {
+  padding: 15px 30px;
+}
+
+#form .bordered {
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
 /* OWL CAROUSEL */
 
 .hide-bullets {
@@ -143,8 +159,8 @@ section {
 }
 
 #sync1 .item {
-  padding: 80px;
   margin: 5px;
+  /*padding: 80px;*/
   /*border-radius: 3px;*/
   /*background: #0c83e7;*/
   /*text-align: center;*/
@@ -169,9 +185,7 @@ section {
 #sync2 .current .item {
   /*background: #0c83e7;*/
 }
-.owl-theme .owl-nav {
-  /*default owl-theme theme reset .disabled:hover links */
-}
+.owl-theme .owl-nav {}
 .owl-theme .owl-nav [class*='owl-'] {
   transition: all .3s ease;
 }
@@ -190,10 +204,10 @@ section {
   top: 50%;
 }
 #sync1.owl-theme .owl-prev {
-  left: 10px;
+  left: -30px;
 }
 #sync1.owl-theme .owl-next {
-  right: 10px;
+  right: -30px;
 }
 .owl-theme .owl-nav [class*=owl-] {
   background: none;
