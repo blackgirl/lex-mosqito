@@ -154,7 +154,15 @@ section {
   margin: 0;
 }
 #contact .section-header {
-    margin-left: 6rem;
+  margin-left: 6rem;
+}
+
+footer {
+  padding: 50px;
+  padding-bottom: 15px;
+}
+footer .row {
+  margin-bottom: 50px;
 }
 
 /* OWL CAROUSEL */
