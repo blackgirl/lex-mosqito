@@ -13,7 +13,7 @@ $(document).ready(function() {
     dots: false,
     loop: true,
     responsiveRefreshRate : 200,
-    navText: ['<i class="fa fa-angle-left fa-4x" aria-hidden="true">','<i class="fa fa-angle-right fa-4x" aria-hidden="true">'],
+    navText: ['',''],
   }).on('changed.owl.carousel', syncPosition);
 
   sync2

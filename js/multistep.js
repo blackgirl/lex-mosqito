@@ -10,8 +10,7 @@ $(".next").click(function() {
 	next_fs = $(this).parent().next();
 	
 	//activate next step on progressbar using the index of next_fs
-	$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-	
+	$("#steps li").eq($("fieldset").index(next_fs)).addClass("active");
 	//show the next fieldset
 	next_fs.show(); 
 	//hide the current fieldset with style
@@ -25,13 +24,13 @@ $(".next").click(function() {
 			//3. increase opacity of next_fs to 1 as it moves in
 			opacity = 1 - now;
 			current_fs.css({
-        'transform': 'scale('+scale+')',
-        'position': 'absolute'
-      });
+		        'transform': 'scale('+scale+')',
+		        'position': 'absolute'
+		    });
 			next_fs.css({'left': left, 'opacity': opacity});
 		}, 
 		duration: 800, 
-		complete: function(){
+		complete: function() {
 			current_fs.hide();
 			animating = false;
 		}, 
@@ -40,15 +39,14 @@ $(".next").click(function() {
 	});
 });
 
-$(".previous").click(function(){
+$(".prev").click(function() {
 	if(animating) return false;
 	animating = true;
 	current_fs = $(this).parent();
 	previous_fs = $(this).parent().prev();
 	
 	//de-activate current step on progressbar
-	$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-	
+	$("#steps li").eq($("fieldset").index(current_fs)).removeClass("active");
 	//show the previous fieldset
 	previous_fs.show(); 
 	//hide the current fieldset with style
@@ -65,7 +63,7 @@ $(".previous").click(function(){
 			previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
 		}, 
 		duration: 800, 
-		complete: function(){
+		complete: function() {
 			current_fs.hide();
 			animating = false;
 		}, 
@@ -74,13 +72,13 @@ $(".previous").click(function(){
 	});
 });
 
-$(".submit").click(function(){
+$(".submit").click(function() {
 	return false;
 })
 
 // CHOOSER
-$(function(){
-	$('div.product-chooser').find('div.product-chooser-item').on('click', function(){
+$(function() {
+	$('div.product-chooser').find('div.product-chooser-item').on('click', function() {
 		$(this).parent().parent().find('div.product-chooser-item').removeClass('selected');
 		$(this).addClass('selected');
 		$(this).find('input[type="radio"]').prop("checked", true);
