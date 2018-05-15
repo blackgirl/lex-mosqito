@@ -62,7 +62,6 @@ img {
 .bg-img.left.img5 {
   top: 150px;
   left: -20%;
-  right: auto;
 }
 @media (min-width: 1600px) { 
   .bg-img.left {
@@ -74,23 +73,26 @@ img {
   -webkit-transform: rotate(-30deg);
   transform: rotate(-30deg);
 }
-/*.bg-img.right.img4 {*/
-.bg-img.right.img4,
-.bg-img.right.img7 {
-  top: -250px;
-  /*left: auto;*/
-  /*right: -450px;*/
+.bg-img.right.img4 {
+  top: -200px;
 }
 .bg-img.right.img13 {
   top: -50px;
 }
 .bg-img.right.img7 {
-  /*top: -250px;*/
-  /*left: auto;*/
-  right: -20%;
+  top: -100px;
+  right: -15%;
 }
 .bg-img.right.img6 {
   right: 0%;
+}
+@media (min-width: 1600px) { 
+  .bg-img.right {
+    right: -20%;
+  }
+  .bg-img.right.img7 {
+    right: -10%;
+  }
 }
 
 /* TEXT */
