@@ -208,7 +208,8 @@ b {
 }
 
 section {
-  padding: 6rem 10rem;
+  padding: 4rem 10rem;
+  padding-top: 2rem;
   position: relative;
 }
 .section-header {
