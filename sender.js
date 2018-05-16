@@ -43,14 +43,16 @@ $(document).ready(function() { // вся магия после загрузки 
 	
 	// АНКЕТА РАЗМЕРОВ
 	$("#ajaxform2").submit(function() { // перехватываем все при событии отправки
+		$('.final-name').text(', ' + $('.fname').val());
+		console.log('FORM SUBMITED!');
 		var form = $(this); // запишем форму, чтобы потом не было проблем с this
 		var errorText = ''; // предварительно ошибок нет
 		var error = false; // предварительно ошибок нет
 		form.find('input').each( function() { // пробежим по каждому полю в форме
-			if($(this).val() == '') { // если находим пустое
-				errorText += 'Заполните "'+$(this).attr('placeholder')+'"!'; // говорим заполняй!
-				error = true; // ошибка
-			}
+			// if($(this).val() == '') { // если находим пустое
+			// 	errorText += 'Заполните "'+$(this).attr('placeholder')+'"!'; // говорим заполняй!
+			// 	error = true; // ошибка
+			// }
 		});
 		if(!error) { // если ошибки нет
 			var data = form.serialize(); // подготавливаем данные

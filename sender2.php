@@ -5,7 +5,7 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 	$width = htmlspecialchars($_POST["width"]); // ширина
 	$height = htmlspecialchars($_POST["height"]); // высота
 	$color = $_POST["color"]; // цвет
-	$name = htmlspecialchars($_POST["name"]); // имя
+	$name = $_POST["name"]; // имя
 	$phone = htmlspecialchars($_POST["phone"]); // телефон
 	// $_POST["email"]?$email = $_POST["email"]:$email = "Не указан";
 	$subject = "Запрос на расчёт стоимости.";

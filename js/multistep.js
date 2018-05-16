@@ -31,7 +31,7 @@ $(".next").click(function() {
 		}, 
 		duration: 800, 
 		complete: function() {
-			current_fs.hide();
+			// current_fs.hide();
 			animating = false;
 		}, 
 		//this comes from the custom easing plugin
@@ -64,7 +64,7 @@ $(".prev").click(function() {
 		}, 
 		duration: 800, 
 		complete: function() {
-			current_fs.hide();
+			// current_fs.hide();
 			animating = false;
 		}, 
 		//this comes from the custom easing plugin
@@ -72,9 +72,9 @@ $(".prev").click(function() {
 	});
 });
 
-$(".submit").click(function() {
-	return false;
-})
+// $(".submit").click(function() {
+// 	return false;
+// })
 
 // CHOOSER
 $(function() {

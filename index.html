@@ -81,7 +81,7 @@
     </div>
     <div class="row wow fadeInLeft animated">
       <div class="col-md-8">
-        <form id="ajaxform2" class="msform">
+        <form  method="post" id="ajaxform2" class="msform" accept-charset="UTF-8">
           <ul id="steps"><li class="active"></li><li></li><li></li><li></li></ul>
           <fieldset>
             <h2 class="fs-title">Что нужно закрыть сеткой?</h2>
@@ -92,7 +92,7 @@
                   <img src="img/window1.png" class="col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="окно">
                   <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
                     <span class="title">Окно</span>
-                    <input type="radio" name="product" value="mobile_desktop" checked="checked">
+                    <input type="radio" name="product" value="Окно" checked="checked">
                   </div><div class="clear"></div>
                 </div>
               </div>
@@ -101,7 +101,7 @@
                   <img src="img/door1.jpg" class="col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="дверь">
                   <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
                     <span class="title">Дверь</span>
-                    <input type="radio" name="product" value="desktop">
+                    <input type="radio" name="product" value="Дверь">
                   </div><div class="clear"></div>
                 </div>
               </div>
@@ -127,7 +127,7 @@
             <h3 class="fs-subtitle">Шаг 3</h3>
             <div class="row text-left">
               <ul class="fs-color">
-                <li><input type="radio" name="color" value="Стандартный белый/ коричневый"><span class="title">Стандартный белый/ коричневый</span></li>
+                <li><input type="radio" name="color" value="Стандартный белый/ коричневый" checked="checked"><span class="title">Стандартный белый/ коричневый</span></li>
                 <li><input type="radio" name="color" value="Под дерево"><span class="title">Под дерево</span></li>
                 <li><input type="radio" name="color" value="Свой цвет (один из 300 оттенков RAL)"><span class="title">Свой цвет (один из 300 оттенков RAL)</span></li>
               </ul>
@@ -139,12 +139,17 @@
             <h2 class="fs-title">Спасибо за ответы!</h2>
             <div class="row">
               <p>Чтобы получить результат, оставьте ваши данные, мы перезвоним вам и озвучим цифры для вариантов "Стандарт", "Элит" и "Премиум".</p>
-              <input type="text" name="fname" placeholder="ваше имя" />
+              <input class="fname" type="text" name="name" placeholder="ваше имя" />
               <input type="text" name="phone" placeholder="ваш телефон" />
-              <!-- <textarea name="address" placeholder="Address"></textarea> -->
             </div>
             <input type="button" name="previous" class="btn prev action-button" value="Назад" />
-            <input type="submit" name="submit" class="btn next submit action-button" value="Получить результат расчёта" />
+            <button type="submit" class="btn next submit action-button">Получить результат расчёта</button>
+          </fieldset>
+          <fieldset class="final-step">
+            <h2 class="fs-title">Спасибо<span class="final-name"></span>!</h2>
+            <p>Ваша заявка принята. Расчёт будет готов в течение 15 минут в рабочее время.</p> 
+            <p>А пока вы ждёте, посмотрите варианты японских декоративных плёнок с защитой от ультрафиолета для ваших окон. Крепятся без клея, служат 10 лет.</p>
+            <a class="btn btn-primary" href="http://lineafix.store" target="_blank">Посмотреть<a>
           </fieldset>
         </form>
       </div>
@@ -162,7 +167,6 @@
 
   <!-- преимущества собственного производства -->
 	<section id="service" class="home-section bg-gold">
-    <!-- <div class="bg-img left"><img src="img/5.png"></div> -->
     <div class="bg-img img6 right"><img src="img/7.png"></div>
     <div class="wow bounceInLeft animated section-header">
 			<h2>Преимущества собственного производства</h2>
@@ -346,7 +350,6 @@
 
 	<section id="form" class="home-section bg-grey">
     <div class="bg-img left"><img src="img/4.png"></div>
-     <!-- <div class="bg-img img4 img13 right"><img src="img/14.png"></div> -->
     <div class="wow bounceInLeft animated section-header">
 			<h2>Ответим на вопросы, поможем с замерами!</h2>
 		</div>
@@ -356,7 +359,7 @@
       </div>
       <div class="col-md-6">
         <p class="wow fadeInRight animated">Оставьте заявку, мы перезвоним вам в течение 15 минут в рабочее время, ответим на вопросы и выполним просчёт. <br>Поможем с замерами удалённо или лично</p>
-        <form id="ajaxform" class="wow fadeInRight animated">
+        <form  method="post" id="ajaxform" class="wow fadeInRight animated">
         	<div class="form-group">
             	<label for="name">Как к вам обращаться?</label>
 	            <input type="text" class="form-control" id="name" name="name">

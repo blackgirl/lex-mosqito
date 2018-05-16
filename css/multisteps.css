@@ -12,11 +12,11 @@
 	border: 0 none;
 	border-radius: 3px;
 	background: white;
-	/*box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);*/
 }
 .msform fieldset .row {
     margin-bottom: 10px;
 }
+.final-step,
 .msform fieldset:not(:first-of-type) {
 	display: none;
 }
