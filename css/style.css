@@ -220,6 +220,9 @@ footer .icon:not(.envelope) {
   background-color: transparent;
   color: #222;
 }
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: none;
+}
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary.active:hover,
