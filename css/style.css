@@ -257,13 +257,16 @@ footer .icon:not(.envelope) {
   padding: 4rem;
   padding-top: 0;
   background: transparent;
-  background: linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.6)), url(../img/background.jpg);
+  background: linear-gradient(rgba(186, 186, 186, 0.2),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.6)), url(../img/background.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
 }
 #hello .text-right {
   padding-top: 15px;
+}
+#hello .text-right .fa {
+  color: gold;
 }
 #hello h3 {
   margin-top: 2rem;
