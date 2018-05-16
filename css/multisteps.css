@@ -13,6 +13,14 @@
 	border-radius: 3px;
 	background: white;
 }
+@media(max-width: 750px) {
+	.msform {
+		width: 100%;
+	}
+	.msform fieldset {
+	    min-height: 300px;
+	}
+}
 .msform fieldset .row {
     margin-bottom: 10px;
 }

@@ -43,8 +43,7 @@ $(document).ready(function() { // вся магия после загрузки 
 	
 	// АНКЕТА РАЗМЕРОВ
 	$("#ajaxform2").submit(function() { // перехватываем все при событии отправки
-		$('.final-name').text(', ' + $('.fname').val());
-		console.log('FORM SUBMITED!');
+		if($('.fname').val()) $('.final-name').text(', ' + $('.fname').val());
 		var form = $(this); // запишем форму, чтобы потом не было проблем с this
 		var errorText = ''; // предварительно ошибок нет
 		var error = false; // предварительно ошибок нет

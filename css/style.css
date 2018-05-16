@@ -53,6 +53,11 @@ main {
 .bg-dark {
   background-color: #464C51;
 }
+@media(max-width: 750px) {
+  .hidden-xs {
+    display: none;
+  }
+}
 
 /* TEXT */
 a {
@@ -68,6 +73,14 @@ a {
 }
 h3 {
   font-size: 1.5rem;
+}
+@media(max-width: 750px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 h5 {
   font-size: 1.25rem;
@@ -262,6 +275,23 @@ footer .icon:not(.envelope) {
   background-position: right;
   background-size: cover;
 }
+@media(max-width: 750px) {
+  header {
+    height: 60px;
+    background: gold;
+  }
+  #hello {
+    padding: 2rem;
+    background: none;
+  }
+  .logo {
+    top: 10px;
+    left: 30px;
+  }
+  .logo-img {
+    width: 50%;
+  }
+}
 #hello .text-right {
   padding-top: 15px;
 }
@@ -286,6 +316,19 @@ section {
   padding: 4rem 10rem;
   padding-top: 2rem;
   position: relative;
+}
+@media(max-width: 750px) {
+  section {
+    padding: 3rem;
+    padding-top: 1rem;
+  }
+  .col-xs-6 , .col-sm-6 {
+    width: 50%;
+  }
+  .msg-block {
+    width: 100%;
+    margin: 0;
+  }
 }
 .section-header {
   margin: 2rem 0;
@@ -327,6 +370,15 @@ section {
 .nav-tabs > li > a {
   padding: .375rem 3rem;
 }
+@media(max-width: 750px) {
+  .nav-tabs > li {
+    margin: 10px;
+  }
+  .nav-tabs > li > a {
+    padding: .375rem 1rem;
+  }
+}
+
 /* CASH */
 #cash .icon + span {
   padding: 30px 0;
@@ -354,6 +406,11 @@ section {
 #alert {
   padding: 50px;
 }
+@media(max-width: 750px) {
+  #alert {
+    padding: 20px;
+  }
+}
 #anketa .bg-grey,
 #form .bordered {
   padding: 15px 30px;
@@ -371,6 +428,11 @@ footer {
 }
 footer .row:first-child {
   margin-bottom: 50px;
+}
+@media(max-width: 750px) {
+  footer .row:first-child {
+    margin-bottom: 0px;
+  }
 }
 footer .envelope + p {
   font-size: 14px;
