@@ -351,14 +351,14 @@
       </div>
       <div class="col-md-6">
         <p class="wow fadeInRight animated">Оставьте заявку, мы перезвоним вам в течение 15 минут в рабочее время, ответим на вопросы и выполним просчёт. <br>Поможем с замерами удалённо или лично</p>
-        <form class="wow fadeInRight animated">
+        <form id="ajaxform" class="wow fadeInRight animated">
         	<div class="form-group">
-            	<label for="">Как к вам обращаться?</label>
-	            <input type="text" class="form-control" >
+            	<label for="name">Как к вам обращаться?</label>
+	            <input type="text" class="form-control" id="name" name="name">
 	        </div>
             <div class="form-group">
-            	<label for="">Введите ваш телефон для уточнения деталей</label>
-	            <input type="phone" class="form-control"  placeholder="+38(0__)_______">
+            	<label for="phone">Введите ваш телефон для уточнения деталей</label>
+	            <input type="phone"  id="phone" name="phone" class="form-control" placeholder="+38(0__)_______">
 	        </div>
             <button type="submit" class="btn btn-primary">Получить консультацию</button>
         </form>
