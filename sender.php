@@ -3,13 +3,12 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 	$name = htmlspecialchars($_POST["name"]); // пишeм дaнныe в пeрeмeнныe и экрaнируeм спeцсимвoлы
 	$email = 'moskitnye.setki.kiev.ua@gmail.com';
 	$phone = htmlspecialchars($_POST["phone"]);
-	$page = $_SERVER['HTTP_REFERER'];
-	
+	// $page = $_SERVER['HTTP_REFERER'];
 	$subject = "Запрос на обратный звонок.";
 
 	$contactMessage = "Имя отправителя: ".$name."\r\n";
 	$contactMessage .= "Телефон для связи: ".$phone."\r\n";
-	$contactMessage .= "Письмо отправлено со страницы: ".$page."\r\n";
+	// $contactMessage .= "Письмо отправлено со страницы: ".$page."\r\n";
 	$contactMessage .= "IP отправителя: ".$_SERVER[REMOTE_ADDR]."\r\n";
 	$json = array(); // пoдгoтoвим мaссив oтвeтa
 	if (!$name or !$phone) { // eсли хoть oднo пoлe oкaзaлoсь пустым
