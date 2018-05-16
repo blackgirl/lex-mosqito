@@ -16,7 +16,6 @@
 .msform fieldset .row {
     margin-bottom: 10px;
 }
-.final-step,
 .msform fieldset:not(:first-of-type) {
 	display: none;
 }
