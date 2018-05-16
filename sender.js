@@ -16,7 +16,7 @@ $(document).ready(function() { // вся магия после загрузки 
 			console.log(data);
 			$.ajax({ // инициализируем ajax запрос
 		    type: 'POST', // отправляем в POST формате, можно GET
-		    url: 'catalog/view/javascript/callback/sender.php', // путь до обработчика, у нас он лежит в той же папке
+		    url: 'sender.php', // путь до обработчика, у нас он лежит в той же папке
 		    dataType: 'json', // ответ ждем в json формате
 		    data: data, // данные для отправки
 	        beforeSend: function(data) { // событие до отправки
@@ -57,7 +57,7 @@ $(document).ready(function() { // вся магия после загрузки 
 			console.log(data);
 			$.ajax({ // инициализируем ajax запрос
 		    type: 'POST', // отправляем в POST формате, можно GET
-		    url: 'catalog/view/javascript/callback/sender2.php', // путь до обработчика, у нас он лежит в той же папке
+		    url: 'sender2.php', // путь до обработчика, у нас он лежит в той же папке
 		    dataType: 'json', // ответ ждем в json формате
 		    data: data, // даINO6/нные для отправки
 	        beforeSend: function(data) { // событие до отправки
@@ -98,7 +98,7 @@ $(document).ready(function() { // вся магия после загрузки 
 			console.log(data);
 			$.ajax({ // инициализируем ajax запрос
 		    type: 'POST', // отправляем в POST формате, можно GET
-		    url: 'catalog/view/javascript/callback/sender3.php', // путь до обработчика, у нас он лежит в той же папке
+		    url: 'sender3.php', // путь до обработчика, у нас он лежит в той же папке
 		    dataType: 'json', // ответ ждем в json формате
 		    data: data, // даINO6/нные для отправки
 	        beforeSend: function(data) { // событие до отправки
