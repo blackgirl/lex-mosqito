@@ -13,7 +13,14 @@
 	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.0&appId=167440540604674&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <header>
   <a class="navbar-brand logo wow fadeInUp animated" href="http://москитные-сетки.kiev.ua"><img class="logo-img" src="img/logo.png" alt="200x50" data-holder-rendered="true"></a>
   <!-- <nav class="navbar navbar-expand-md navbar-dark">
@@ -359,8 +366,8 @@
         <img class="wow fadeInUp animated" data-src="holder.js/300x400/auto" alt="300x400" data-holder-rendered="true">
       </div> -->
       <div class="col-md-8 offset-2">
-        <img class="wow fadeInDown animated" data-src="holder.js/750x300/auto" alt="750x300" data-holder-rendered="true">
-      <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmoskitnye.setki.kiev.ua&tabs=reviews&width=600&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="600" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> -->
+        <!-- <img class="wow fadeInDown animated" data-src="holder.js/750x300/auto" alt="750x300" data-holder-rendered="true"> -->
+        <div class="fb-page" data-href="https://www.facebook.com/moskitnye.setki.kiev.ua" data-tabs="timeline" data-width="800" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
       </div>
     </div>
 	</section>
@@ -460,7 +467,6 @@
   	<div class="col-md-12 map">
       <!-- API key AIzaSyCIIrQDEX6fRb_YN4lRPDqmq3X-ulTOQFM -->
       <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:350px;width:100%;'><div id='gmap_canvas' style='height:350px;width:100%;'></div><div><small><a href="http://www.googlemapsgenerator.com">locksmith google maps</a></small></div><div><small><a href="http://kantoorruimtehuren.nu/">https://kantoorruimtehuren.nu</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(50.4485676,30.395584900000017),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.4485676,30.395584900000017)});infowindow = new google.maps.InfoWindow({content:'<strong>Адрес</strong><br><br>Киев, ул.Ескаваторная 24<br>ул.Луговая 16 (производство)<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-      <!-- <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe> -->
     </div>
   </section>
 
