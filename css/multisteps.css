@@ -1,10 +1,10 @@
 /* FORM */
-#msform {
+.msform {
 	width: 80%;
 	text-align: center;
 	position: relative;
 }
-#msform fieldset {
+.msform fieldset {
     min-height: 383px;
 	position: relative;
 	box-sizing: border-box;
@@ -14,14 +14,14 @@
 	background: white;
 	/*box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);*/
 }
-#msform fieldset .row {
+.msform fieldset .row {
     margin-bottom: 10px;
 }
-#msform fieldset:not(:first-of-type) {
+.msform fieldset:not(:first-of-type) {
 	display: none;
 }
-#msform input:not(.btn), 
-#msform textarea {
+.msform input:not(.btn), 
+.msform textarea {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -32,31 +32,31 @@
     color: #2C3E50;
     font-size: 13px;
 }
-#msform .fs-color {
+.msform .fs-color {
 	list-style-type: none;
     margin: 40px 0 50px 0;
 }
-#msform .fs-color li {
+.msform .fs-color li {
 	margin-bottom: 10px;
 }
-#msform input[type=radio] {
+.msform input[type=radio] {
 	width: auto;
 	margin-right: 10px;
 }
 
 /* BUTTONS */
-#msform .action-button.next {
+.msform .action-button.next {
     background: #00bde8;
     color: white;
 }
-#msform .action-button.prev {
+.msform .action-button.prev {
 	background: #eee;
     color: #444;
 }
-#msform .action-button.next:hover, #msform .action-button.next:focus {
+.msform .action-button.next:hover, .msform .action-button.next:focus {
     background: #23a1d1;
 }
-#msform .action-button.prev:hover, #msform .action-button.prev:focus {
+.msform .action-button.prev:hover, .msform .action-button.prev:focus {
 	background: #ccc;
 }
 
