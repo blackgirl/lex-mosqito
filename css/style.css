@@ -304,6 +304,14 @@ section {
   padding-right: 10px;
   color: #ccc;
 }
+#types .fa-square.brown {color: peru;}
+#types .fa-square.white {color: white;text-shadow: 0px 0px 1px #666;}
+#types .fa-square.d-brown {color: saddlebrown;}
+#types .fa-square.grey {color: slategray;}
+#types .fa-square.g-brown {color: goldenrod;}
+#types .fa-square.vinchester {color: navy;}
+#types .fa-square.mahon {color: maroon;}
+
 .nav {
   margin: 0 auto;
   margin-bottom: 2rem;

@@ -41,14 +41,14 @@ $(document).ready(function() { // вся магия после загрузки 
 		return false; // вырубаем стандартную отправку формы
 	});
 	
-	// ХОЧУ СКИДКУ
+	// АНКЕТА РАЗМЕРОВ
 	$("#ajaxform2").submit(function() { // перехватываем все при событии отправки
 		var form = $(this); // запишем форму, чтобы потом не было проблем с this
 		var errorText = ''; // предварительно ошибок нет
 		var error = false; // предварительно ошибок нет
-		form.find('input:not(#email)').each( function() { // пробежим по каждому полю в форме
+		form.find('input').each( function() { // пробежим по каждому полю в форме
 			if($(this).val() == '') { // если находим пустое
-				errorText += 'Заполните FUCK "'+$(this).attr('placeholder')+'"!'; // говорим заполняй!
+				errorText += 'Заполните "'+$(this).attr('placeholder')+'"!'; // говорим заполняй!
 				error = true; // ошибка
 			}
 		});
