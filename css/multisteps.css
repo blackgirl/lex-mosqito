@@ -13,21 +13,23 @@
 	border-radius: 3px;
 	background: white;
 }
-@media(max-width: 750px) {
-	.msform {
-		width: 100%;
-	}
-	.msform fieldset {
-	    min-height: 300px;
-	}
-}
 .msform fieldset .row {
     margin-bottom: 10px;
 }
 .msform fieldset:not(:first-of-type) {
 	display: none;
 }
-.msform input:not(.btn), 
+@media(max-width: 750px) {
+	.msform {
+		width: 100%;
+	}
+	.msform fieldset {
+	    min-height: 300px;
+		padding: 0;
+	}
+}
+
+.msform input:not(.btn),
 .msform textarea {
     padding: 15px;
     border: 1px solid #ccc;
@@ -88,6 +90,11 @@
 	/* CSS counters to number the steps */
 	counter-reset: step;
 }
+@media(max-width: 750px) {
+	#steps {
+		padding: 0;
+	}
+}
 #steps li {
 	list-style-type: none;
 	text-transform: uppercase;
@@ -122,7 +129,7 @@
     z-index: -1;
 }
 #steps li:first-child:after {
-	content: none; 
+	content: none;
 }
 #steps li.active:before {
 	border: 2px solid #30c7f2;
@@ -162,4 +169,19 @@ div.product-chooser div.product-chooser-item input {
 	left: 0;
 	top: 0;
 	visibility:hidden;
+}
+
+/* WIDTH & HEIGHT fieldset */
+.rowclonned span {
+	border-radius: 0.2rem;
+    padding: 8px;
+}
+.rowclonned span .btn {
+    padding: 0;
+}
+.rowclonned span .btn-add {
+	color: green;
+}
+.rowclonned span .btn-remove {
+	color: red;
 }
